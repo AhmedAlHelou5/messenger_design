@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
-import 'model/user_model.dart';
+import '../../model/user/user_model.dart';
 
+// ignore: must_be_immutable
 class UsersScreen extends StatelessWidget {
+  UsersScreen({super.key});
 
   List<UserModel> users =[
     UserModel(id: 1, name: 'Ahmed Al-Helou', phone: '+970592722192'),
@@ -16,6 +18,8 @@ class UsersScreen extends StatelessWidget {
     UserModel(id: 9, name: 'Ahmed Hatem Al-Helou', phone: '+970592722194'),
     UserModel(id: 10, name: 'Ahmed Al-Helou', phone: '+970592722191'),
   ];
+
+
 
   @override
   Widget build(BuildContext context) {
